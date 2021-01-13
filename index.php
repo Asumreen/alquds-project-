@@ -1,2 +1,2 @@
-<?php
-header("Location: ./welc/");
+<?php 
+HEADER("LOCATION:public/");
