@@ -6,6 +6,10 @@ define('Logins','/^1[1-5][0-9]{3}$/');
 define("Phones",'/^07[7-9][0-9]{7}$/');
 define('Rels','/^([\x{0600}-\x{06FF}]){2,10}([[:space:]][\x{0600}-\x{06FF}]{2,10})?/u');
 define("NatunalID",'/^[0-9]{10}$/');
+
+!defined("DS") ? define("DS", DIRECTORY_SEPARATOR) : "";
+define("MAX_SIZE_OF_IMG", "10000000");
+define("IMAGES_ACTIVITIES_PATH", "uploads" . DS);
 //Errors define 
 define('NameE',"يجب أدخال الأسم الرباعي للعضو");
 define('PhoneE',"يجب أدخال رقم هاتف مكون من عشر خانات للعضو");
@@ -91,7 +95,7 @@ return mysqli_num_rows($result)!=0;
 function checkNID_reqester($NID,$db){
 $sql="SELECT name FROM requst WHERE nationalID='$NID'";
 $reuslt = mysqli_query($db,$sql);
-return mysqli_num_rows($result)!=0;
+return mysqli_num_rows($reuslt)!=0;
 }
 // A is an array that have the unit names 
 $A[1]="الأشبال";
