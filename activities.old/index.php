@@ -31,7 +31,7 @@ $data=array_reverse($data)
 	<div class="w3-bar w3-large " style=" opacity: .9; background-image: linear-gradient(150deg,#d2d4d4,#f5f5f5,#ffffff); margin-top: 5px;
 	 border-radius: 10px; border: 1px solid #f5f5f5; ">
 		<a href="../welc/" class="w3-bar-item w3-button w3-right w3-padding-14 w3-hover-green"><i class="fa fa-home"></i></a>
-    	<a href="../login/" class="w3-bar-item w3-button w3-right w3-padding-14 w3-hover-green"> تسجيل الدخول  </a>
+    	<a href="../php/Views/login.php" class="w3-bar-item w3-button w3-right w3-padding-14 w3-hover-green"> تسجيل الدخول  </a>
   		<a href="" class="w3-bar-item w3-button w3-left w3-padding-14 w3-hover-green"> أنشطتنا </a>
   		<a href="../contact_us/" class="w3-bar-item w3-button w3-left w3-padding-14 w3-hover-green"> تواصلو معنا </a>
 	</div>

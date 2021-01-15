@@ -94,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="../activities/" class="w3-bar-item w3-button w3-left w3-padding-14 w3-hover-green"> أنشطتنا </a>
         <a href="../contact_us/" class="w3-bar-item w3-button w3-left w3-padding-14 w3-hover-green"> تواصلو معنا </a>
     </div>
-  <form action="" method="POST">
+  <form action="../php/Controllers/loginController.php" method="POST">
     	<div class=" w3-container w3-mobile"style=" border: 1px solid #f5f5f5;border-radius: 15px;
     	background-image: linear-gradient(150deg,#d2d4d4,#f5f5f5,#ffffff); opacity: 0.9; margin-left: 40%; margin-top: 2%;margin-bottom: 1.5%; margin-right: 40%;">
 
