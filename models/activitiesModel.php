@@ -39,7 +39,7 @@ class ActivitiesModel{
 
     public static function remove_activity($name){
         global $db;
-        $Full_path = IMAGES_ACTIVITIES_PATH . $name;
+        $Full_path = FilesUpload::IMAGES_ACTIVITIES_PATH . $name;
         $sql="DELETE FROM image WHERE name='$name'";
         $result=mysqli_query($db,$sql);
         if($result):

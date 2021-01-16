@@ -28,7 +28,7 @@
 	</div>
 	<div class="w3-container">
 	<?php foreach ($activities as $activite):?>
-	     <img  src='<?= '..' . DS . IMAGES_ACTIVITIES_PATH . $activite?>'>
+	     <img  src='<?= '..' . DS . $images_path . $activite?>'>
     <?php endforeach;?>
 
 	</div>

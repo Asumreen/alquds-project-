@@ -3,12 +3,14 @@
 namespace alquds\controllers;
 
 use alquds\Models\ActivitiesModel;
+use alquds\Models\FilesUpload;
 
 class ActivitiesController extends abstractController{
 
 
     public function defaultAction(){
         $this->_data['activities'] = ActivitiesModel::get_all_activities();
+        $this->data['images_path'] = FilesUpload::IMAGES_ACTIVITIES_PATH;
         $this->view();
     }
 
@@ -62,6 +64,7 @@ class ActivitiesController extends abstractController{
 
 
         $this->_data['activities'] = ActivitiesModel::get_all_activities();
+        $this->data['images_path'] = FilesUpload::IMAGES_ACTIVITIES_PATH;
         $this->view();
     }
 
