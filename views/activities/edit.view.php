@@ -47,7 +47,7 @@
     <?php foreach ($activities as $activite):?>
         <div class='w3-third'> 
             <div class='w3-card'>
-                <img class='pic' src="<?= '..' . DS . IMAGES_ACTIVITIES_PATH . $activite?>" style='width:100%''>
+                <img class='pic' src="<?= '..' . DS . $images_path . $activite?>" style='width:100%''>
                 <div class='w3-container' style='margin-top:2%;'>
                     <center><button type='submit' name='del' value='<?=$activite?>' class='w3-button w3-btn 'style='width: 10%; background: white ; ' > <i class='fa fa-trash' ></i> </button></center> 
                 </div>

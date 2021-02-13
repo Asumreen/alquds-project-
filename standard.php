@@ -8,8 +8,7 @@ define('Rels','/^([\x{0600}-\x{06FF}]){2,10}([[:space:]][\x{0600}-\x{06FF}]{2,10
 define("NatunalID",'/^[0-9]{10}$/');
 
 !defined("DS") ? define("DS", DIRECTORY_SEPARATOR) : "";
-define("MAX_SIZE_OF_IMG", "10000000");
-define("IMAGES_ACTIVITIES_PATH", "uploads" . DS);
+
 //Errors define 
 define('NameE',"يجب أدخال الأسم الرباعي للعضو");
 define('PhoneE',"يجب أدخال رقم هاتف مكون من عشر خانات للعضو");

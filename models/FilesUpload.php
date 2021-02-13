@@ -6,6 +6,8 @@ class FilesUpload{
 
 
     private array $file;
+    const MAX_SIZE_OF_IMG = 10000000;
+    const IMAGES_ACTIVITIES_PATH = "uploads" . DS;
 
     public function __construct(array $File)
     {
@@ -25,7 +27,7 @@ class FilesUpload{
         $msg = -1;
         if(isset($this->file['error']) && $this->file['error'] != 4):
 
-            $Directoryname = IMAGES_ACTIVITIES_PATH;
+            $Directoryname = self::IMAGES_ACTIVITIES_PATH;
             $tmp_name = $this->file['tmp_name'];
             $Imagename  = $this->file['name'];
 
@@ -42,7 +44,7 @@ class FilesUpload{
             // check type of image 
             if(!in_array($Imagetype, $allowTypes)){
                 $msg = '<br/>الأنواع من الصور مسموح بها jpg, jpeg & png فقط هذا';
-            }else if($Imagesize > MAX_SIZE_OF_IMG){ // check size of image
+            }else if($Imagesize > self::MAX_SIZE_OF_IMG){ // check size of image
                 $msg = "<br/>10 MB يجب ان يكون حجم الصوره اقل من ";
             }
 
