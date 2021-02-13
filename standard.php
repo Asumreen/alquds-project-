@@ -94,13 +94,8 @@ return mysqli_num_rows($result)!=0;
 }
 function checkNID_reqester($NID,$db){
 $sql="SELECT name FROM requst WHERE nationalID='$NID'";
-<<<<<<< HEAD
-$reuslt = mysqli_query($db,$sql);
-return mysqli_num_rows($reuslt)!=0;
-=======
 $result = mysqli_query($db,$sql);
 return mysqli_num_rows($result)!=0;
->>>>>>> 72b62605fd53bee0ec40ef1a00f4847a698c18dc
 }
 // A is an array that have the unit names 
 $A[1]="الأشبال";

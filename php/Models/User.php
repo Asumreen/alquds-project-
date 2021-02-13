@@ -3,7 +3,7 @@ require_once("../../standard.php");
 require_once("../lib/functions.php");
 
 
-$db = require_once("../Config.php");
+require_once("../Config/DBServ.php");
 session_start();
 
 class User
